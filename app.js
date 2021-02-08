@@ -25,5 +25,33 @@ if(age <=15) {
 var isFan = "true "
 console.log (isFan);
 console.log (fname + ' ,' + age + "Years old , is a Fan" + ' ' + isFan );
+ 
+var type = prompt("Football or Basketball Fan ?") ;
+while (type !== "Football" && type !== "Basketball" )
+{
+   type = prompt("Football or Basketball Fan ?") ;
+}
+var space = '  ' ;
+if(type == "Football")
+{ space = '<img src="welcome.jpg"/>'
+}
+else 
+{
+   space = '<img src="closed.jpg"/>'
+}
+document.write (space) 
+Ball = '<img src="Football.jpg"/>'
+var noOfBall = prompt("Do you Want To Buy A ball ?")
+var result = '  ' ;
+for(var i=0 ; i<noOfBall ; i++)
+{
+   result = result + Ball 
+}
+document.write (result)
+
+
+
+
+
 
 
